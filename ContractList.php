@@ -42,7 +42,7 @@ for($i=0;$i<$minerals_result->num_rows;$i++){
 $result= $dbcon->query("select contract_id,username,sum(price) as sss,is_buy from Industry_Contracts where contract_id>1 group by contract_id,username,is_buy order by contract_id desc limit 100");
 
 echo("<a href=\"./SubmitContract.php\" style=\"font-size:30px;\" target=\"_blank\">바이백 컨트랙 신청하기</a><br>\n");
-echo("컨트랙은 Ubuntu Hakurei 에게. Tastela(근방 지역 포함) , Y-MPWL <-> Jita 경로상의 모든 성계  에서 삽니다.<br>\n");
+echo("컨트랙은 Ubuntu Hakurei 에게 Y-MPWL <-> Jita 경로상의 모든 성계  에서 삽니다.<br>\n");
 //echo("현재는 테스트중입니다.<br>\n");
 echo("<br>\n");
 /*echo("미네랄 수요.(해당 광 매입가 높음)<br>\n");

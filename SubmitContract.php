@@ -527,6 +527,7 @@ for($i=0,$i_=0;$i<sizeof($itemstring);$i++){
     //Decryptor : groupid=1304
     //Materials and Compounds : groupid=530
     //Comodities : groupid=526
+    //Sleeper Components : groupid=880
     //Rogue Drone Components : groupid=886
     //Miscellaneous : groupid=314
     //General : groupid=280
@@ -553,7 +554,8 @@ for($i=0,$i_=0;$i<sizeof($itemstring);$i++){
     groupid=333 or
     groupid=1304 or 
     groupid=530 or 
-    groupid=526 or 
+    groupid=526 or
+    groupid=880 or 
     groupid=886 or 
     groupid=314 or 
     groupid=280 or 
