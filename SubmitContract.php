@@ -522,6 +522,7 @@ for($i=0,$i_=0;$i<sizeof($itemstring);$i++){
     }
 
     //기타 물품 데이터를 불러온다
+
     //Salvaged Materials : groupid=754
     //Datacore : groupid=333
     //Decryptor : groupid=1304
@@ -549,6 +550,12 @@ for($i=0,$i_=0;$i<sizeof($itemstring);$i++){
     //Abyssal Filaments : groupid=1979
     //Jump Filaments : groupid=4041
     //Triglavian Space Filaments : groupid=4087
+
+    // Triglavian Data : groupid=1995
+    // Abyssal Materials : groupid=1996
+    // Mutaplasmids : groupid=1964
+
+
     $qr="select * from EVEDB_Item where typeid=\"".$itemstring[$i][0]."\" and 
     (groupid=754 or 
     groupid=333 or
@@ -565,7 +572,10 @@ for($i=0,$i_=0;$i<sizeof($itemstring);$i++){
     (groupid>727 and groupid<736) or
     groupid=1979 or
     groupid=4041 or
-    groupid=4087
+    groupid=4087 or
+    groupid=1995 or
+    groupid=1996 or
+    groupid=1964
     );";
     $result=$dbcon->query($qr);
 
